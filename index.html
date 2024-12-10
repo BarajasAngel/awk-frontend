@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload - Dark Mode</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <!-- Card para cargar archivos -->
+   <div class="general">
+        <div class="container">
+            <h1>Carga los archivos</h1>
+            <form id="file-form">
+                <label for="awkFile">Carga el archivo .awk:</label>
+                <input type="file" id="awkFile" name="awkFile" accept=".awk" required>
+                <p id="awkMessage" class="message"></p>
+
+                <label for="datFile">Carga el archivo .dat:</label>
+                <input type="file" id="datFile" name="datFile" accept=".dat" required>
+                <p id="datMessage" class="message"></p>
+
+                <button type="submit">Cargar archivos</button>
+                <button id="clear-charts" type="button">Limpiar gráficos</button>           
+            </form>  
+
+        </div>       
+   </div>
+
+    <!-- Card para gráficos -->
+    <div id="chart-area">
+        <h2>La grafica se mostrara aquí.</h2>
+    </div>
+
+    
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
